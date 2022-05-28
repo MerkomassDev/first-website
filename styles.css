@@ -8,7 +8,7 @@
 }
 
 .navbar{
-    background: #131313;
+    background-image: radial-gradient(circle, #010d1f, #061223, #091628, #0d1a2c, #101d31, #101d31, #101d31, #101d31, #0d1a2c, #091628, #061223, #010d1f);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -32,8 +32,10 @@
 
 }
 #navbar__logo{
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background: #00B4DB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -88,13 +90,16 @@ navbar__item{
     padding: 10px 20px;
     height: 100%;
     width: 100%;
-    border: none;
-    outline: none;
+    border: black;
+    outline: black;
     border-radius: 4px;
-    background: #833ab4;
-    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background-image: radial-gradient(circle, #162842, #182b47, #1a2e4c, #1d3252, #1f3557, #1f3557, #1f3557, #1f3557, #1d3252, #1a2e4c, #182b47, #162842);
     color: #fff;
     transition: all 0.3s ease;
     
+}
+.navbar__links:hover{
+    color: #00B4DB;
+    transition: all 0.3s ease;
+
 }
